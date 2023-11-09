@@ -30,6 +30,7 @@ export class ChipsComponent implements OnInit {
       }
     }
   ngOnInit(): void {
+    console.log($("main")[0].innerHTML)
   }
 
 }
