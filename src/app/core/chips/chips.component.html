@@ -1,0 +1,11 @@
+<main>
+    <div class="container">
+        <h1>JavaScript tags and chips management</h1>
+        <input type="text" id="chipset" (keypress)="keypress($event)" placeholder="type and Enter ...">
+        <ul id="list">
+            <li *ngFor="let item of items | slice:0:10;;let i as index"> 
+            <span>{{item}}</span><a (click)="remove(i)">X</a>
+            </li>
+        </ul>
+</div>
+</main>

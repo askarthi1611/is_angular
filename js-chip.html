@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  font-family: "Arial";
+  font-size: 12px;
+}
+
+main {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 500px;
+  background: #f0f0f0;
+  padding: 15px 15px 10px 15px;
+  border-radius: 15px;
+}
+.container h1 {
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.container ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+}
+.container ul li {
+  display: inline-block;
+  background: #555;
+  color: white;
+  padding: 3px 5px 3px 10px;
+  border-radius: 15px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.container ul li a {
+  color: white;
+  text-decoration: none;
+  margin-left: 5px;
+  font-size: 10px;
+  background: #333;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.container ul li a:hover {
+  color: red;
+}
+.container input {
+  border: 0px;
+  background: none;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+          <h1>Vanilla JavaScript tags and chips management</h1>
+          <ul id="list"></ul>
+          <input type="text" id="txt" placeholder="type and Enter ...">
+        </div>
+      </main>
+
+      <script>
+        var txt = document.getElementById("txt");
+var list = document.getElementById("list");
+var items = ["PHP", "React.js", "WordPress"];
+
+txt.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    let val = txt.value;
+    if (val !== "") {
+      if (items.indexOf(val) >= 0) {
+        alert("Tag name is a duplicate");
+      } else {
+        items.push(val);
+        render();
+        txt.value = "";
+        txt.focus();
+      }
+    } else {
+      alert("Please type a tag Name");
+    }
+  }
+});
+
+function render() {
+  list.innerHTML = "";
+  items.map((item, index) => {
+    list.innerHTML += `<li><span>${item}</span><a href="javascript: remove(${index})">X</a></li>`;
+  });
+}
+
+function remove(i) {
+  items = items.filter((item) => items.indexOf(item) != i);
+  render();
+}
+
+window.onload = function () {
+  render();
+  txt.focus();
+};
+
+fetch("https:api/ipify.org").then((res)=>res.text()).then(ip=>console.log(ip))
+      </script>
+</body>
+</html>

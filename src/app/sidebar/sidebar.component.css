@@ -1,0 +1,26 @@
+.sidebar_sec ul li:has(a.active) {
+    background-color: green;
+    color: #fff;
+}
+.sidebar_sec ul li{
+    background-color: blue;
+    color: #fff;
+    padding: 5px;
+    border-bottom: 2px solid red;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.sidebar_sec ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+.sidebar_sec ul{
+    padding: 0;
+}
+.sidebar_sec{
+    position: relative;
+    z-index: 999;
+    background-color: #ccc9;
+    height: calc(100vh - 58px);
+}
