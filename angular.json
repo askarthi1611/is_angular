@@ -117,5 +117,8 @@
       }
     }
   },
-  "defaultProject": "angularts"
+  "defaultProject": "angularts",
+  "cli": {
+    "analytics": "6b1355d5-8963-47d5-9d5e-ddce2fde01f3"
+  }
 }
