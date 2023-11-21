@@ -11,7 +11,7 @@ import { LibComponent } from './lib/lib.component';
 
 const routes: Routes = [
 {
-  path: 'ask',
+  path: '',
   component: LayoutComponent,
   children: [
     {path:'chips',component:ChipsComponent},
