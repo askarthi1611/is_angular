@@ -1,0 +1,11 @@
+<main>
+    <h1>Libraries</h1>
+    <div class="row">
+        <div class="col-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3" *ngFor="let lib of libs"> 
+            <div class="card">
+                <div class="titlte_div">{{lib.title}}</div>
+                <div class="limk_div"><a target="_blank" href="{{lib.link}}">{{lib.link}}</a></div>
+            </div>
+        </div>
+    </div>
+</main>

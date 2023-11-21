@@ -11,6 +11,7 @@ import { AngularSplitModule } from 'angular-split';
 import { KeyboardComponent } from './keyboard/keyboard.component';
 import { DraggableComponent } from './draggable/draggable.component';
 import { AngularDraggableModule } from 'angular2-draggable';
+import { LibComponent } from './lib/lib.component';
 
 @NgModule({
   declarations: [ 
@@ -19,7 +20,8 @@ import { AngularDraggableModule } from 'angular2-draggable';
     TableColpComponent,
     AsplitComponent,
     KeyboardComponent,
-    DraggableComponent
+    DraggableComponent,
+    LibComponent
   ],
   imports: [
     CommonModule,

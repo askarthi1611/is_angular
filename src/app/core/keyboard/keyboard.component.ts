@@ -15,6 +15,7 @@ export class KeyboardComponent implements OnInit {
   @HostListener('document:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent): void {
     this.key=event.key
+    event.preventDefault();
     console.log(event.key,this.key.length);
     try {
       if (event.ctrlKey) {

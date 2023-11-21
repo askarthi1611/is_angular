@@ -7,6 +7,7 @@ import { TableColpComponent } from './table-colp/table-colp.component';
 import { AsplitComponent } from './asplit/asplit.component';
 import { KeyboardComponent } from './keyboard/keyboard.component';
 import { DraggableComponent } from './draggable/draggable.component';
+import { LibComponent } from './lib/lib.component';
 
 const routes: Routes = [
 {
@@ -18,7 +19,8 @@ const routes: Routes = [
     {path:'table_col',component:TableColpComponent},
     {path:'asplit',component:AsplitComponent},
     {path:'host-listener',component:KeyboardComponent},
-    {path:'drag',component:DraggableComponent}
+    {path:'drag',component:DraggableComponent},
+    {path:'lib',component:LibComponent},
   ]
 }
   ];
