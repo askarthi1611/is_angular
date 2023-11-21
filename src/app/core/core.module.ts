@@ -8,6 +8,7 @@ import { DataTablesModule } from 'angular-datatables';
 import { TableColpComponent } from './table-colp/table-colp.component';
 import { AsplitComponent } from './asplit/asplit.component';
 import { AngularSplitModule } from 'angular-split';
+import { KeyboardComponent } from './keyboard/keyboard.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { AngularSplitModule } from 'angular-split';
     ChipsComponent,
     TableresComponent,
     TableColpComponent,
-    AsplitComponent
+    AsplitComponent,
+    KeyboardComponent
   ],
   imports: [
     CommonModule,
