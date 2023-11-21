@@ -11,5 +11,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  open_github(){
+    window.open("https://github.com/askarthi1611/is_angular", "", "width=1900,height=900")
+  }
 }

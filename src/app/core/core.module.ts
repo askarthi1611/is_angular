@@ -9,7 +9,8 @@ import { TableColpComponent } from './table-colp/table-colp.component';
 import { AsplitComponent } from './asplit/asplit.component';
 import { AngularSplitModule } from 'angular-split';
 import { KeyboardComponent } from './keyboard/keyboard.component';
-
+import { DraggableComponent } from './draggable/draggable.component';
+import { AngularDraggableModule } from 'angular2-draggable';
 
 @NgModule({
   declarations: [ 
@@ -17,13 +18,15 @@ import { KeyboardComponent } from './keyboard/keyboard.component';
     TableresComponent,
     TableColpComponent,
     AsplitComponent,
-    KeyboardComponent
+    KeyboardComponent,
+    DraggableComponent
   ],
   imports: [
     CommonModule,
     CoreRoutingModule,
     DataTablesModule,
     AngularSplitModule,
+    AngularDraggableModule
   ]
 })
 export class CoreModule { }

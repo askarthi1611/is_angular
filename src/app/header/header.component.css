@@ -1,0 +1,14 @@
+.header_div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.github_svg{
+    position: relative;
+}
+.github_svg svg{
+    width: 25px;
+    position: absolute;
+    z-index: 9999;
+    right: 5px;
+}

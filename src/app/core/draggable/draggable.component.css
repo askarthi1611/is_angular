@@ -1,0 +1,12 @@
+.drag-block{
+    height: 500px;
+    width: 500px;
+    background-color: red;
+}
+.drag-boundary{
+    background-color: green;
+    height: calc(100vh - 500px);
+    width: calc(100vw - 500px);
+    min-height: 600px;
+    max-width: 800px;
+}

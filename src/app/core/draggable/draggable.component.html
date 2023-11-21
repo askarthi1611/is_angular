@@ -1,0 +1,25 @@
+
+<div class="git_page">
+    <a target="_blank" href="https://raw.githubusercontent.com/askarthi1611/is_angular/main/src/app/core/draggable/draggable.component.html">html</a>
+    <a target="_blank" href="https://raw.githubusercontent.com/askarthi1611/is_angular/main/src/app/core/draggable/draggable.component.css">css</a>
+    <a target="_blank" href="https://raw.githubusercontent.com/askarthi1611/is_angular/main/src/app/core/draggable/draggable.component.ts">ts</a>
+    <a target="_blank" href="https://xieziyu.github.io/angular2-draggable/#/welcome">Reference Link</a>
+</div><main>
+    <h1>Draggable & Resize </h1>
+    <div>
+        <div>
+          <div class="drag-boundary" [ngClass]="{
+              'top-b': !edge?.top,
+              'bottom-b': !edge?.bottom,
+              'left-b': !edge?.left,
+              'right-b': !edge?.right
+            }" #myBounds>
+            <p class="label">#myBounds</p>
+            <div ngDraggable class="drag-block" (edge)="checkEdge($event)" [bounds]="myBounds" [inBounds]="inBounds" [outOfBounds]="myOutOfBounds">
+              <p>Drag me {{ inBounds ? 'in #myBounds' : '' }}</p>
+              <p>check your console</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</main>
