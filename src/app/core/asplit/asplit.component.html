@@ -1,0 +1,25 @@
+
+<div class="git_page">
+    <a target="_blank" href="https://raw.githubusercontent.com/askarthi1611/is_angular/main/src/app/core/asplit/asplit.component.html">html</a>
+    <a target="_blank" href="https://raw.githubusercontent.com/askarthi1611/is_angular/main/src/app/core/asplit/asplit.component.css">css</a>
+    <a target="_blank" href="https://raw.githubusercontent.com/askarthi1611/is_angular/main/src/app/core/asplit/asplit.component.ts">ts</a>
+    <a target="_blank" href="https://angular-split.github.io/">Reference Link</a>
+</div><main>
+    <h1>Angular-split</h1>
+    <div>
+      <button (click)="change_dir('horizontal',0,1)">Left to Right</button>
+      <button (click)="change_dir('horizontal',1,0)">Right to Left</button>
+      <button (click)="change_dir('vertical',0,1)">Top to Bottom</button>
+      <button (click)="change_dir('vertical',1,0)">Bottom to Top</button>
+    </div>
+    <div style="width: 500px; height: 500px;">
+        <as-split [direction]="dir">
+          <as-split-area  style="background: yellow;" [order]="data_0" [size]="40">
+            <p>0</p>
+          </as-split-area>
+          <as-split-area  style="background: red;" [order]="data_1" [size]="60">
+            <p>1</p>
+          </as-split-area>
+        </as-split>
+      </div>
+    </main>

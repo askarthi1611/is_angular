@@ -4,6 +4,7 @@ import { LayoutComponent } from '../layout/layout.component';
 import { ChipsComponent } from './chips/chips.component';
 import { TableresComponent } from './tableres/tableres.component';
 import { TableColpComponent } from './table-colp/table-colp.component';
+import { AsplitComponent } from './asplit/asplit.component';
 
 const routes: Routes = [
 {
@@ -12,7 +13,8 @@ const routes: Routes = [
   children: [
     {path:'chips',component:ChipsComponent},
     {path:'table',component:TableresComponent},
-    {path:'table_col',component:TableColpComponent}
+    {path:'table_col',component:TableColpComponent},
+    {path:'asplit',component:AsplitComponent}
   ]
 }
   ];
