@@ -8,6 +8,7 @@ import { AsplitComponent } from './asplit/asplit.component';
 import { KeyboardComponent } from './keyboard/keyboard.component';
 import { DraggableComponent } from './draggable/draggable.component';
 import { LibComponent } from './lib/lib.component';
+import { NavscrollComponent } from './navscroll/navscroll.component';
 
 const routes: Routes = [
 {
@@ -21,6 +22,7 @@ const routes: Routes = [
     {path:'host-listener',component:KeyboardComponent},
     {path:'drag',component:DraggableComponent},
     {path:'lib',component:LibComponent},
+    {path:'navscroll',component:NavscrollComponent}
   ]
 }
   ];

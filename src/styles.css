@@ -3,6 +3,7 @@ body{
   padding: 10px !important;
   height: 100vh !important;
   background-color: #ccc5;
+  overflow-x: hidden;
 }
 /* DATATABLE RESPONSIVE */
 table.dataTable thead>tr>th{
@@ -69,6 +70,8 @@ table.dataTable thead>tr>th.sorting:before, table.dataTable thead>tr>th.sorting:
   z-index: 999;
   position: relative;
   display: flex;
+  top: 50px;
+position: fixed;
 }
 .git_page a{
   background-color: #ccc5;

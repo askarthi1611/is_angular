@@ -1,10 +1,10 @@
 <div style="width: fit-content;">
-    <app-header></app-header>
+    <app-header class="header_app"></app-header>
     <div style="display: flex;">
-        <div style="min-width:240px;">
+        <div class="sidebar_app">
             <app-sidebar></app-sidebar>
         </div>
-        <div style="width: calc(100vw - 275px );padding-left: 10px;">
+        <div class="main_app">
             <router-outlet></router-outlet>
         </div>
     </div>

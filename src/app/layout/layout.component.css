@@ -1,0 +1,23 @@
+.sidebar_app {
+    min-width: 240px;
+    position: fixed;
+    z-index: 999;
+    left: 5px;
+    top: 50px;
+}
+
+.header_app {
+    position: fixed;
+    z-index: 999;
+    top: 10px;
+    width: 99%;
+}
+
+.main_app {
+    width: calc(100vw - 275px);
+    padding-left: 10px;
+    position: fixed;
+    position: absolute;
+    left: 255px;
+    top: 50px;
+}

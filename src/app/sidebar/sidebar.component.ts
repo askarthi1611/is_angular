@@ -19,5 +19,6 @@ public navlink=[
   {link:'/asplit',title:'Angular split '},
   {link:'/host-listener',title:'Angular Keyboard HostListener'},
   {link:'/drag',title:'Draggable '},
+  {link:'/navscroll',title:'Nav-link Scroll '},
 ]
 }

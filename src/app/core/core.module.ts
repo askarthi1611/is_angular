@@ -12,6 +12,7 @@ import { KeyboardComponent } from './keyboard/keyboard.component';
 import { DraggableComponent } from './draggable/draggable.component';
 import { AngularDraggableModule } from 'angular2-draggable';
 import { LibComponent } from './lib/lib.component';
+import { NavscrollComponent } from './navscroll/navscroll.component';
 
 @NgModule({
   declarations: [ 
@@ -21,7 +22,8 @@ import { LibComponent } from './lib/lib.component';
     AsplitComponent,
     KeyboardComponent,
     DraggableComponent,
-    LibComponent
+    LibComponent,
+    NavscrollComponent
   ],
   imports: [
     CommonModule,
