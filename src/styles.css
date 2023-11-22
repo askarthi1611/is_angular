@@ -70,8 +70,6 @@ table.dataTable thead>tr>th.sorting:before, table.dataTable thead>tr>th.sorting:
   z-index: 999;
   position: relative;
   display: flex;
-  top: 50px;
-position: fixed;
 }
 .git_page a{
   background-color: #ccc5;
