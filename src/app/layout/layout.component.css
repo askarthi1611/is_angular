@@ -7,6 +7,7 @@
 }
 
 .header_app {
+    display: flex;
     position: fixed;
     z-index: 999;
     top: 10px;
@@ -21,3 +22,62 @@
     left: 255px;
     top: 50px;
 }
+
+/* icon */
+
+.icon{
+    display: none;
+    width:50px;
+    height:50px;
+    position:realtive;
+    top:-6px;
+    cursor:pointer;
+    transition:300ms all ease-in-out;
+    margin-left:6px;
+  }
+  .icon .bar{
+    border-radius:1000px;
+    background:#000;
+    width:30px;
+    height:3px;
+    margin:0px 2px;
+    position:relative;
+    top:17px;
+    transition:300ms all ease-in-out;
+}
+.icon .bar:first-child{top:10px;}
+.icon .bar:last-child{top:25px;}
+.icon.out .bar:first-child{transform:rotate(45deg);top:18px;}
+.icon.out .bar:last-child{transform:rotate(-45deg);top:12px;}
+  .icon.out .bar.mdl{
+    opacity:0;
+}
+  .icon{
+    cursor:pointer;
+  }
+  .icon.out{
+      margin-left:0;
+    }
+  .icon.thin{
+      margin-left:22px !important;
+  }
+  
+  @media screen and (max-width:991px) {
+      .header_app .icon{
+          display: block;
+      }
+      .sidebar_app{
+        display: none;
+      }
+      .mob .sidebar_app{
+        background-color: #fff;
+        display: block;
+      }
+      .main_app{
+        width: 99%;
+        padding-left: 10px;
+        position: fixed;
+        left: 0;
+        top: 50px;
+      }
+  }
