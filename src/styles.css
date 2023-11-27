@@ -2,7 +2,7 @@ body{
   width: 100vw !important;
   padding: 10px !important;
   height: 100vh !important;
-  background-color: #ccc5;
+  background-color: #f5f5f5;
   overflow-x: hidden;
 }
 /* DATATABLE RESPONSIVE */
@@ -99,4 +99,40 @@ table.dataTable thead>tr>th.sorting:before, table.dataTable thead>tr>th.sorting:
 .git_page a:nth-child(4){
   color: brown;
   border: 1px solid brown;
+}
+
+
+/* loader img */
+
+.loader{
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  background-color: #f0ffffcc;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  cursor: wait;
+  
+}
+.loader img{
+  width: 200px;
+}
+@keyframes zoominoutsinglefeatured {
+  0% {
+      transform: scale(1,1);
+  }
+  50% {
+      transform: scale(1.2,1.2);
+  }
+  100% {
+      transform: scale(1,1);
+  }
+}
+
+.loader img {
+  animation: zoominoutsinglefeatured 1s infinite ;
 }
