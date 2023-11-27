@@ -1,5 +1,13 @@
-<div style="width: fit-content;">
-    <app-header class="header_app"></app-header>
+
+<div class="layout" style="width: fit-content;">
+    <div class="header_app">
+        <div class="icon" (click)="inout()">
+            <div class="bar"></div>
+            <div class="bar mdl"></div>
+            <div class="bar"></div>
+          </div>
+          <app-header style="width: 100%;"></app-header>
+    </div>
     <div style="display: flex;">
         <div class="sidebar_app">
             <app-sidebar></app-sidebar>

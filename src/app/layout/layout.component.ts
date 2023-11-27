@@ -6,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./layout.component.css']
 })
 export class LayoutComponent implements OnInit {
-
   constructor() { }
-
-  ngOnInit(): void {
-    
+  inout(){
+    $('.icon').toggleClass('out')
+    $('.layout').toggleClass('mob')    
   }
+  ngOnInit(): void { }
 
 }
