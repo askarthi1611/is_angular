@@ -24,3 +24,8 @@
     background-color: #ccc9;
     height: calc(100vh - 58px);
 }
+@media screen and (max-width:991px) {
+    .sidebar_sec ul li:first-child{
+        margin-top: 0;
+    }
+}

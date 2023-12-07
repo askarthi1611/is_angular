@@ -7,6 +7,7 @@
             <div class="bar"></div>
           </div>
           <app-header style="width: 100%;"></app-header>
+          <div (click)="showDialog()">code</div>
     </div>
     <div style="display: flex;">
         <div class="sidebar_app">
@@ -17,3 +18,14 @@
         </div>
     </div>
 </div>
+<p-dialog header="Github Code Preview" [(visible)]="visible" [style]="{width: '50vw'}">
+    <main>
+        <div>
+            <p-tabView [(activeIndex)]="activeIndex" [scrollable]="true">
+                <p-tabPanel *ngFor="let git of github_link" [header]="git.name">
+                    <pre contenteditable class="git_preview">{{ git.code }}</pre>
+                </p-tabPanel>
+            </p-tabView>
+        </div>
+    </main>
+</p-dialog>

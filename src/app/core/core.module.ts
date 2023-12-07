@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TabViewModule } from 'primeng/tabview';
 
 import { CoreRoutingModule } from './core-routing.module';
 import { ChipsComponent } from './chips/chips.component';
@@ -13,7 +14,7 @@ import { DraggableComponent } from './draggable/draggable.component';
 import { AngularDraggableModule } from 'angular2-draggable';
 import { LibComponent } from './lib/lib.component';
 import { NavscrollComponent } from './navscroll/navscroll.component';
-
+import { GittabComponent } from './gittab/gittab.component';
 @NgModule({
   declarations: [ 
     ChipsComponent,
@@ -23,14 +24,16 @@ import { NavscrollComponent } from './navscroll/navscroll.component';
     KeyboardComponent,
     DraggableComponent,
     LibComponent,
-    NavscrollComponent
+    NavscrollComponent,
+    GittabComponent,
   ],
   imports: [
     CommonModule,
     CoreRoutingModule,
     DataTablesModule,
     AngularSplitModule,
-    AngularDraggableModule
+    AngularDraggableModule,
+    TabViewModule
   ]
 })
 export class CoreModule { }

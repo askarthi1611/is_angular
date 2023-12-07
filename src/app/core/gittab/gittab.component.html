@@ -1,0 +1,10 @@
+<main>
+    <h1>Github Code Preview</h1>
+    <div>
+        <p-tabView [(activeIndex)]="activeIndex" [scrollable]="true">
+            <p-tabPanel *ngFor="let git of github_link" [header]="git.name">
+                <pre contenteditable class="git_preview">{{ git.code }}</pre>
+            </p-tabPanel>
+        </p-tabView>
+    </div>
+</main>

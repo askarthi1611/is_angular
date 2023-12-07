@@ -1,0 +1,10 @@
+.git_preview:focus{
+    background-color: #333;
+    color: #f5f5f5;
+}
+::selection{
+    background-color: #e91e63;
+    color: #ffeb3b;
+    font-weight: bold;
+    pointer-events: none;
+}

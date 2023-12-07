@@ -11,7 +11,6 @@ export class NavscrollComponent implements OnInit {
 
   nav_link(e: any) {
     let elem:any=document.querySelector(`#${e}`);
-    $('.nav_link').map((e, l: any) => { $(l).removeClass('active') });
     window.scrollTo(0, elem.offsetTop-250)
   }
   ngOnInit(): void {

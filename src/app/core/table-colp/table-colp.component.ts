@@ -9,8 +9,21 @@ export class TableColpComponent implements OnInit {
 
   reponsive_table:any 
   constructor() { }
-
-  ngOnInit(): void {
+  github_link=[
+    {name:'html',link:'https://raw.githubusercontent.com/askarthi1611/is_angular/main/src/app/core/table-colp/table-colp.component.html',type:'github_link',code:''},
+    {name:'css',link:'https://raw.githubusercontent.com/askarthi1611/is_angular/main/src/app/core/table-colp/table-colp.component.css',type:'github_link',code:''},
+    {name:'ts',link:'https://raw.githubusercontent.com/askarthi1611/is_angular/main/src/app/core/table-colp/table-colp.component.ts',type:'github_link',code:''},
+    {name:'ref',link:'https://raw.githubusercontent.com/askarthi1611/is_angular/main/src/app/core/table-colp/table-colp.component.ts',type:'reference_link',code:''}
+  ]
+  async ngOnInit(): Promise<void> {
+    for (let link of this.github_link) {
+      if (link.type=='github_link') {
+        await fetch(link.link).then(response => response.text()).then(html => link.code=html)        
+      }
+    }
+    setTimeout(() => {
+      console.log(this.github_link);
+    }, 1000);
     this.reponsive_table= {
       initComplete: function () {
         let TableID = 'reponsive_table' //set id of datatable

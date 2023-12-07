@@ -1,25 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-layout',
-  templateUrl: './layout.component.html',
-  styleUrls: ['./layout.component.css']
+  selector: 'app-gittab',
+  templateUrl: './gittab.component.html',
+  styleUrls: ['./gittab.component.css']
 })
-export class LayoutComponent implements OnInit {
-  constructor() { }
-  code_view(e:any){
-    console.log(e.target,e);
-  }
-  visible: boolean = false;
-
-  showDialog() {
-      this.visible = true;
-  }
-  inout(){
-    $('.icon').toggleClass('out')
-    $('.layout').toggleClass('mob')    
-  }
+export class GittabComponent implements OnInit {
   activeIndex:any=0;
+  constructor() { }
   github_link=[
     {name:'html',link:'https://raw.githubusercontent.com/askarthi1611/is_angular/main/src/app/core/table-colp/table-colp.component.html',type:'github_link',code:''},
     {name:'css',link:'https://raw.githubusercontent.com/askarthi1611/is_angular/main/src/app/core/table-colp/table-colp.component.css',type:'github_link',code:''},
@@ -33,4 +21,5 @@ export class LayoutComponent implements OnInit {
       }
     }
   }
+
 }

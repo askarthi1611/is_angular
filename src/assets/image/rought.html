@@ -1,0 +1,52 @@
+<!-- <!DOCTYPE html> -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="X-Frame-Bypass: Web Component extending IFrame to bypass X-Frame-Options: sameorigin">
+	<title>X-Frame-Bypass Web Component Demo</title>
+	<style>
+		html, body {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			overflow: hidden;
+		}
+		iframe {
+			display: block;
+			width: calc(100% - 40px);
+			height: calc(100% - 40px);
+			margin: 20px;
+		}
+		img {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+         ::selection{
+            color: red;
+            background-color: yellow;
+            border-radius: 8px;
+         }
+	</style>
+	<script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
+	<script src="x-frame-bypass.js" type="module"></script>
+</head>
+<body>
+<h1>The iframe element</h1>
+<pre contenteditable id="div">
+    
+</pre>
+<script>
+    let html1=''
+    async function funcName(url){
+        await fetch(url)
+  .then(response => response.text())
+  .then(html => html1=html)
+document.querySelector("#div").textContent=html1
+    }
+    funcName('https://raw.githubusercontent.com/askarthi1611/is_angular/main/src/index.html')
+    console.log('sk');
+</script>
+</body>
+</html>
